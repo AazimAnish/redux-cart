@@ -1,9 +1,9 @@
-import { CategoryCard } from "../../components"
+import { Category } from "../../components"
 
 export default function Home() {
   return (
     <main>
-      <CategoryCard />
+      <Category />
     </main>
   )
 }
