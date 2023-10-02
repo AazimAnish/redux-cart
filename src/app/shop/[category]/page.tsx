@@ -3,13 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { ProductCard } from '../../../../components';
-
-interface Product {
-  id: number;
-  title: string;
-  image: string;
-  price: number;
-}
+import { Product } from '../../../../components/ProductCard';
 
 
 const CategoryPage = () => {
