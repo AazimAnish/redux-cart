@@ -12,7 +12,7 @@ export const categoryContent = [
         image: "/assets/MensCloth.jpg"
     },
     {
-        name: "women's clothing",
+        name: "women's clothingg",
         image: "/assets/WomensCloth.jpg"
     },
 ];  

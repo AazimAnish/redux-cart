@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { ProductCard } from '../../../../components';
-import handler from '@/app/api/products/[category]';
 
 interface Product {
   id: number;

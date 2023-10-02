@@ -1,5 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import store from '../../redux/store';
+import { Providers } from '../../redux/provider';
 
 import { Navbar, Footer } from '../../components';
 
@@ -8,12 +10,16 @@ export const metadata: Metadata = {
   description: 'Music for the soul',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+   children
+   }: {
+     children: React.ReactNode
+     }) {
   return (
     <html lang='en'>
       <body className='relative mx-4'>
         <Navbar />
-        {children}
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>
