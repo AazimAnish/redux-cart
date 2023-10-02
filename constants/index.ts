@@ -1,18 +1,18 @@
 export const categoryContent = [
     {
-        name: "Jwellery",
+        name: "jewelery",
         image: "/assets/Jwellery.jpg"
     },
     {
-        name: "Electronics",
+        name: "electronics",
         image: "/assets/Electronics.jpg"
     },
     {
-        name: "MensCloth",
+        name: "men's clothing",
         image: "/assets/MensCloth.jpg"
     },
     {
-        name: "WomensCloth",
+        name: "women's clothing",
         image: "/assets/WomensCloth.jpg"
     },
 ];  

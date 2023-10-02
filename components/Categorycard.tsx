@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
-import { categoryContent } from '../constants';
+import Image from 'next/image';
 
 interface CategoryCardProps {
   name: string;
@@ -10,7 +9,7 @@ interface CategoryCardProps {
 const CategoryCard: React.FC<CategoryCardProps> = ({ image, name }) => {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <Link href={`/category/${name}`}>
+      <Link href={`/shop/${name}`}>
           <div className={`relative h-64`}>
             <Image
               src={image}

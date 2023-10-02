@@ -1,5 +1,3 @@
-// pages/api/products/[category].ts
-
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(
