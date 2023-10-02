@@ -16,7 +16,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     // Fetch products in the "jewelry" category with a limit of 10
-    fetch('https://fakestoreapi.com/products/category/jewelery?limit=10')
+    fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())
       .then((data: Product[]) => {
         setProducts(data);

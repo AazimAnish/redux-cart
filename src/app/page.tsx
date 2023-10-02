@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import { CategoryCard } from "../../components"
 
 export default function Home() {
   return (
     <main>
-      
+      <CategoryCard />
     </main>
   )
 }

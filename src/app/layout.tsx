@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className='relative'>
+      <body className='relative mx-4'>
         <Navbar />
         {children}
         <Footer />

@@ -5,7 +5,7 @@ import { Logo } from '../public/assets';
 const Navbar = () => {
   return (
     <div className='flex flex-col md:flex-row items-center justify-between'>
-      <Link href="/" className="flex items-center mx-4" passHref>
+      <Link href="/" className="flex items-center" passHref>
         <Image
           src={Logo}
           alt="Logo"
@@ -18,11 +18,10 @@ const Navbar = () => {
         </span>
       </Link>
 
-      <div className="flex gap-x-4 mx-4 md:mx-4">
+      <div className="flex gap-x-4 mx-2">
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/products">Products</Link>
-        <Link href="/contacts">Contact</Link>
+        <Link href="/products">Shop</Link>
+        <Link href="/cart">Cart</Link>
       </div>
     </div>
   );
