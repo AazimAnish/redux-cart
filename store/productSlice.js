@@ -5,16 +5,10 @@ const initialState = {
   status: "idle",
 };
 
-//createSlice is a function that accepts an initial state, an object full of reducer functions, and a "slice name", and automatically generates action creators and action types that correspond to the reducers and state.
 const productSlice = createSlice({
   name: "products",
   initialState,
-  reducers: {
-    //reducers are functions that take the current state and an action as arguments, and return a new state result.
-    // fetchProducts: (state, action) => {
-    //   state.data = action.payload;
-    // },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getProducts.pending, (state, action) => {
@@ -27,12 +21,10 @@ const productSlice = createSlice({
       .addCase(getProducts.rejected, (state, action) => {
         state.status = "failed";
       });
-    // Add reducers for additional action types here, and handle loading state as needed
   },
 });
 
 export default productSlice.reducer;
-export const { fetchProducts } = productSlice.actions;
 
 export const getProducts = createAsyncThunk(
   "products/getProducts",
@@ -42,8 +34,3 @@ export const getProducts = createAsyncThunk(
     return products;
   }
 );
-// export function getProducts() {
-//   return async function getProductsThunk(dispatch, getState) {
-
-//   };
-// }

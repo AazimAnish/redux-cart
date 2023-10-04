@@ -10,7 +10,7 @@ function NavbarComponent() {
     <Navbar className="fixed top-0 w-full bg-white shadow-md" expand="lg" style={{ padding: "10px 0", height: "auto" }}>
       <Container>
         <div className="flex justify-between items-center">
-          <Navbar.Brand to="/" as={Link} className="text-2xl font-semibold text-indigo-600" style={{ fontSize: "1.5rem" }}>
+          <Navbar.Brand to="/" as={Link} className="text-2xl font-semibold text-indigo-600 mx-6" style={{ fontSize: "1.5rem" }}>
             REDUX CART
           </Navbar.Brand>
           <div className="flex">
