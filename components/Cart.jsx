@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../store/CartSlice";
+import Image from "next/image";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const Cart = () => {
           <div key={product.id}>
             <div className="bg-white rounded-lg shadow-md p-4">
               <div className="flex justify-center items-center">
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
                   className="w-40 h-52 object-cover rounded-full"

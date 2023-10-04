@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../store/CartSlice";
 import { getProducts } from "../store/productSlice";
+import Image from "next/image";
+
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -26,7 +28,7 @@ const Products = () => {
       <div className="col-md-3 mb-4" key={product.id}>
         <div className="bg-white rounded-lg shadow-md p-4">
           <div className="flex justify-center items-center">
-            <img
+            <Image
               src={product.image}
               alt={product.title}
               className="w-40 h-52 object-cover"
