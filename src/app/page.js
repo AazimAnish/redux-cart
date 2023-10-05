@@ -1,30 +1,33 @@
-"use client";
+"use client"
 
-import Cart from '../../components/Cart'
-import Dashboard from '../../components/Dashoard'
-import {
-  Route,
-  RouterProvider,
-  Routes,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import Link from 'next/link';
+import Cart from '../../components/Cart';
 import RootLayout from '../../components/RootLayout';
+import Dashboard from '../../components/Dashoard';
 
 function App() {
-  const rotuer = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/cart" element={<Cart />} />
-      </Route>
-    )
+  return (
+    <RootLayout>
+      {/* <nav>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Dashboard</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/cart">
+              <a>Cart</a>
+            </Link>
+          </li>
+        </ul>
+      </nav> */}
+      <main>
+        <Dashboard />
+        <Cart />
+      </main>
+    </RootLayout>
   );
-  return (  
-    <div className="App">
-      <RouterProvider router={rotuer} />
-    </div>
-  )
 }
 
 export default App;

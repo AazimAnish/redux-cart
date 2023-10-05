@@ -1,9 +1,10 @@
+"use client"
+
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../store/CartSlice";
 import { getProducts } from "../store/productSlice";
 import Image from "next/image";
-
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const Products = () => {
             <Image
               src={product.image}
               alt={product.title}
-              className="w-40 h-52 object-cover"
+              className="product-image"
             />
           </div>
           <div className="mt-4">
