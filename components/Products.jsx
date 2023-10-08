@@ -32,6 +32,8 @@ const Products = () => {
             <Image
               src={product.image}
               alt={product.title}
+              width={250}
+              height={300}
               className="product-image"
             />
           </div>

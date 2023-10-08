@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../store/CartSlice";
@@ -22,6 +24,8 @@ const Cart = () => {
                 <Image
                   src={product.image}
                   alt={product.title}
+                  width={250}
+                  height={300}
                   className="w-40 h-52 object-cover rounded-full"
                 />
               </div>

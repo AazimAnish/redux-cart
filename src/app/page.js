@@ -4,30 +4,15 @@ import Link from 'next/link';
 import Cart from '../../components/Cart';
 import RootLayout from '../../components/RootLayout';
 import Dashboard from '../../components/Dashoard';
+import NavbarComponent from '../../components/NavbarComponent';
 
 function App() {
   return (
-    <RootLayout>
-      {/* <nav>
-        <ul>
-          <li>
-            <Link href="/">
-              <a>Dashboard</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/cart">
-              <a>Cart</a>
-            </Link>
-          </li>
-        </ul>
-      </nav> */}
-      <main>
+      <div>
+        <NavbarComponent />
         <Dashboard />
-        <Cart />
-      </main>
-    </RootLayout>
-  );
+      </div>
+  )
 }
 
 export default App;
